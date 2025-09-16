@@ -1,0 +1,30 @@
+// It use to solve Maximum SubArray Sum ex -( [1,2,3,4,5] Output - 15 - 1+2+3+4+5 ) ex -2 ( [1,5,-2,-5,6] - 6 - 1+5)
+// Subarray meens the continus part  of array 
+import java.util.Scanner;
+class KadansAlgo{
+        void BruteForce(int[] arr){
+        int MaximumSum = Integer.MIN_VALUE;
+
+
+        int[] arrCopy = arr;
+        for(int i = 0 ; i < arrCopy.length ; i++){
+            for(int j = i ; j < arrCopy.length ; j++){
+                int sumi = (arr[i] + arr[j]);
+                if(sum > MaximumSum){
+                    MaximumSum = sumi;
+                }
+            }
+        }
+
+    }
+    class Main{
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            Syatem.out.print("Enter the size of array! ")
+            int size = sc.nextInt();
+            int[] arr; = new int[size];
+        
+        }
+    }
+
+}

@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Java with input.txt",
+      "type": "shell",
+      "command": "javac ${fileBasename} && java ${fileBasenameNoExtension} < input.txt > output.txt",
+      "options": {
+        "cwd": "${fileDirname}",
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
